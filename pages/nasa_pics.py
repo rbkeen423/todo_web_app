@@ -1,8 +1,10 @@
 import streamlit as st
-import requests
+import requests, os
+from dotenv import load_dotenv
 
 # Prepare API key & URL
-key = "GpuwlfH5tddCcUWTdmUVde9cbjttfcX0mxgrCdAG"
+load_dotenv()
+key = os.getenv('Nasa_API')
 url = ("https://api.nasa.gov/planetary/apod?api_key="
        f"{key}")
 
