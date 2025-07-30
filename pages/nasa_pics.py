@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 # Prepare API key & URL
 load_dotenv()
-key = st.secrets('Nasa_API')
+key = st.secrets['Nasa_API']
 url = ("https://api.nasa.gov/planetary/apod?api_key="
        f"{key}")
 
